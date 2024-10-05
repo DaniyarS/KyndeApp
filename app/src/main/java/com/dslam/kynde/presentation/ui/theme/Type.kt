@@ -1,4 +1,4 @@
-package com.dslam.kynde.ui.theme
+package com.dslam.kynde.presentation.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

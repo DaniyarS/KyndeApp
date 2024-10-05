@@ -1,8 +1,9 @@
-package com.dslam.kynde
+package com.dslam.kynde.presentation
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.ui.graphics.vector.ImageVector
 
@@ -18,14 +19,20 @@ sealed class BottomBarScreen(
         title = "Home"
     )
 
-    data object NotificationScreen : BottomBarScreen(
-        route = "notification",
-        icon = Icons.Filled.Notifications,
-        title = "Notifications"
+    data object TasksScreen : BottomBarScreen(
+        route = "my_tasks",
+        icon = Icons.Filled.List,
+        title = "My tasks"
     )
 
-    data object ProfileScreen : BottomBarScreen(
-        route = "profile",
+    data object ProgressScreen : BottomBarScreen(
+        route = "progress",
+        icon = Icons.Filled.Check,
+        title = "My progress"
+    )
+
+    data object AccountScreen : BottomBarScreen(
+        route = "account",
         icon = Icons.Filled.Person,
         title = "Profile"
     )

@@ -1,4 +1,4 @@
-package com.dslam.kynde
+package com.dslam.kynde.presentation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
