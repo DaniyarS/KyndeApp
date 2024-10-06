@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Күнде</string>
+
+    <!-- Menu items -->
+    <string name="home_title">Басты бет</string>
+    <string name="profile_title">Жеке кабинет</string>
+    <string name="progress_title">Жетістіктер</string>
+    <string name="tasks_title">Тапсырмалар</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kynde</string>
+
+    <!-- Menu items -->
+    <string name="home_title">Главная</string>
+    <string name="profile_title">Профиль</string>
+    <string name="progress_title">Мой Прогресс</string>
+    <string name="tasks_title">Мои Задания</string>
+
+</resources>

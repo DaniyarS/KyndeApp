@@ -1,39 +1,40 @@
-package com.dslam.kynde.presentation
+package com.dslam.kynde.presentation.screen
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.ui.graphics.vector.ImageVector
+import com.dslam.kynde.R
 
 sealed class BottomBarScreen(
     val route: String,
     val icon: ImageVector,
-    val title: String
+    val titleRes: Int
 ) {
 
-    data object HomeScreen : BottomBarScreen(
+    data object Home : BottomBarScreen(
         route = "home",
         icon = Icons.Filled.Home,
-        title = "Home"
+        titleRes = R.string.home_title
     )
 
-    data object TasksScreen : BottomBarScreen(
+    data object Tasks : BottomBarScreen(
         route = "my_tasks",
-        icon = Icons.Filled.List,
-        title = "My tasks"
+        icon = Icons.AutoMirrored.Filled.List,
+        titleRes = R.string.tasks_title
     )
 
-    data object ProgressScreen : BottomBarScreen(
+    data object Progress : BottomBarScreen(
         route = "progress",
         icon = Icons.Filled.Check,
-        title = "My progress"
+        titleRes = R.string.progress_title
     )
 
-    data object AccountScreen : BottomBarScreen(
+    data object Profile : BottomBarScreen(
         route = "account",
         icon = Icons.Filled.Person,
-        title = "Profile"
+        titleRes = R.string.profile_title
     )
 }
